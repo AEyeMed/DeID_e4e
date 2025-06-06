@@ -1,0 +1,16 @@
+python scripts/train.py \
+--dataset_type fundus_encode \
+--exp_dir new/experiment/directory \
+--start_from_latent_avg \
+--use_w_pool \
+--w_discriminator_lambda 0.1 \
+--progressive_start 20000 \
+--val_interval 10000 \
+--max_steps 200000 \
+--stylegan_size 512 \
+--stylegan_weights /home/zack/Desktop/workspace/zhaoubuntu/DeID/private_version/E4E/stylegan2-ada-pytorch/weights/checkpoint.pt \
+--workers 8 \
+--batch_size 8 \
+--test_batch_size 4 \
+--id_lambda 0  \
+--test_workers 4  \
